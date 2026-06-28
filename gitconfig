@@ -11,7 +11,8 @@
 
 [core]
   pager = less -FRSX
-  editor = code --wait
+	editor = cursor --wait
+	excludesfile = /Users/maxime/.gitignore_global
 
 [alias]
   co = checkout
@@ -62,3 +63,5 @@
 [user]
 	email = oudinmaxime@gmail.com
 	name = Maxime Oudin
+[url "git@gitlab.com:"]
+	insteadOf = https://gitlab.com/

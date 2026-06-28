@@ -1,3 +1,6 @@
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 ZSH=$HOME/.oh-my-zsh
 
 # You can change the theme with another one from https://github.com/robbyrussell/oh-my-zsh/wiki/themes
@@ -65,8 +68,13 @@ export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-export BUNDLER_EDITOR=code
-export EDITOR=code
+export BUNDLER_EDITOR=cursor
+export EDITOR=cursor
 
 # Set ipdb as the default Python debugger
 export PYTHONBREAKPOINT=ipdb.set_trace
+
+alias code='cursor'
+
+
+export PATH="/Users/maxime/.bun/bin:$PATH"export PATH="$HOME/.local/bin:$PATH"
